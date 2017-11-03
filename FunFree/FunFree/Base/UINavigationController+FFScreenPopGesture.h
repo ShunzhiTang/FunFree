@@ -25,8 +25,8 @@
 /// cases.
 @interface UIViewController (FFScreenPopGesture)
 
-/// Whether the interactive pop gesture is disabled when contained in a navigation
-/// stack.
+/// Whether the interactive pop gesture is disabled when contained in a
+/// navigation stack.
 @property (nonatomic, assign) BOOL fd_interactivePopDisabled;
 
 /// Indicate this view controller prefers its navigation bar hidden or not,

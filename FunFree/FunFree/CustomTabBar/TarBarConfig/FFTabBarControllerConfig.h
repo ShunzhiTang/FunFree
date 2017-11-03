@@ -6,12 +6,11 @@
 //  Copyright © 2016年 TangFeng. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "FFTabBarController.h"
+#import <Foundation/Foundation.h>
 
 @interface FFTabBarControllerConfig : NSObject
 
-@property (nonatomic,readonly ,strong) FFTabBarController *tabBarController;
-
+@property (nonatomic, readonly, strong) FFTabBarController *tabBarController;
 
 @end

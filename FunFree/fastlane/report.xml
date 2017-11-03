@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001792">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001447">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: cp ./dotfiles/.clang-format ." time="0.009177">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: find ./ -path .//Example/Pods -prune -o -name &quot;*.[hm]&quot; -exec clang-format -i -style=file &quot;{}&quot; \;" time="0.369514">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

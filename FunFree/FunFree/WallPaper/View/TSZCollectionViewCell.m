@@ -7,7 +7,7 @@
 //
 
 #import "TSZCollectionViewCell.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 
 @implementation TSZCollectionViewCell
 

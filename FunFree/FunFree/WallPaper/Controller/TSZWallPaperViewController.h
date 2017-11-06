@@ -6,12 +6,13 @@
 //  Copyright © 2016年 shunzhitang. All rights reserved.
 //
 
-#import "TSZBaseViewController.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef void (^WallPaperDidFinishChooseImageBlock) (NSString *imageUrl);
 
 
-@interface TSZWallPaperViewController : TSZBaseViewController
+@interface TSZWallPaperViewController : UIViewController
 
 @property (nonatomic ,copy) WallPaperDidFinishChooseImageBlock  resultBlock;
 

@@ -106,20 +106,13 @@
     //接入外部效果
     _currentIndex = btn.tag - 100;
     
-    if (_tapAnimation) {
-        
-        // 有动画 滚动改变线条 ， 改变颜色
-        
-    }else{
-        
-        // 手动textColor
-        [self changeItemColor:_currentIndex];
-        
-        // 改变线条
-        [self changeLine:_currentIndex];
-        
-    }
+    // 有动画 滚动改变线条 ， 改变颜色 _tapAnimation
+       
+    // 手动textColor
+    [self changeItemColor:_currentIndex];
     
+    // 改变线条
+    [self changeLine:_currentIndex];
     // 改变 scrollOfSet
     [self changeScrollOfSet:_currentIndex];
     

@@ -7,14 +7,16 @@
 //
 
 #import "TSZWallPaperViewController.h"
-#import "MJRefresh.h"
 #import "TSZCollectionViewFlowLayout.h"
 #import "TSZShopModel.h"
 #import "TSZItemsControlView.h"
 #import "TSZCollectionViewCell.h"
 #import "GDataXMLNode.h"
-#import "TSZCommonFontColorStyle.h"
+#import <MJRefresh/MJRefresh.h>
 
+#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
+
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface TSZWallPaperViewController ()<UICollectionViewDelegate , UICollectionViewDataSource ,TSZCollectionViewFlowLayoutDelegate >
 
@@ -36,9 +38,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self setStrNavTitle:@"图片墙"];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title =@"图片墙";
     self.currentPageIndex = 1;
     self.shops = [[NSMutableArray alloc] init];
     
@@ -48,18 +49,18 @@
     
     // 头部控制 , 滑动的 scrollview
     TSZItemsConfig *config = [[TSZItemsConfig alloc] init];
-    config.itemWidth = TSZSystemScreenWidth / 5.0;
+    config.itemWidth = kScreenWidth / 5.0;
     
-    _itemControlView = [[TSZItemsControlView alloc] initWithFrame:CGRectMake(0, 0, TSZSystemScreenWidth, 40)];
+    _itemControlView = [[TSZItemsControlView alloc] initWithFrame:CGRectMake(0, 64, kScreenWidth, 40)];
     _itemControlView.tapAnimation = YES;
     _itemControlView.config = config;
     _itemControlView.titleArray = self.categories;
-    TSZWeakSelf weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     
     [_itemControlView setTapItemWithIndex:^(NSInteger index , BOOL animation){
        
         weakSelf.currentCategory = weakSelf.categories[index];
-        [weakSelf.collectView headerBeginRefreshing];
+        [weakSelf.collectView.mj_header beginRefreshing];
         [weakSelf.itemControlView moveToIndex:index];
     }];
     
@@ -69,14 +70,13 @@
     TSZCollectionViewFlowLayout *layout = [[TSZCollectionViewFlowLayout alloc] init];
     
     layout.delegate = self;
-    self.collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, TSZSystemScreenWidth, TSZSystemScreenHeight - 64.f - 40.f) collectionViewLayout:layout];
+    self.collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 120, kScreenWidth, kScreenHeight - 64.f - 80.f) collectionViewLayout:layout];
     self.collectView.delegate = self;
     self.collectView.dataSource = self;
-    self.collectView.gjcf_top = 40;
     [self.view addSubview:self.collectView];
     
     [self.collectView registerNib:[UINib  nibWithNibName:@"TSZCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
-    
+    self.collectView.backgroundColor = [UIColor whiteColor];
     [self setupRefresh];
     
 }
@@ -97,19 +97,13 @@
 - (void)addHeader{
     
     // 添加下拉头部刷新
-    TSZWeakSelf weakSelf = self;
-    
-    [self.collectView addHeaderWithCallback:^{
-        
-        // 进入刷新就会调用这个block
-        
+    __weak typeof(self) weakSelf = self;
+    self.collectView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         weakSelf.currentPageIndex = 1;
         [weakSelf requestWallList];
-        
-        
-    } dateKey:@"collection"];  // dateKey用于存储刷新时间，也可以不传值，可以保证不同界面拥有不同的刷新时间
+    }];
     
-    [self.collectView headerBeginRefreshing];
+    [self.collectView.mj_header beginRefreshing];
 }
 
 /**
@@ -117,15 +111,13 @@
  */
 - (void)addFooter{
     
-    TSZWeakSelf weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     // 添加上拉刷新
-    [self.collectView addFooterWithCallback:^{
-       
+    self.collectView.mj_footer  = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         weakSelf.currentPageIndex++;
         [weakSelf requestWallList];
-        
     }];
-    
+
 }
 
 #pragma mark: collectionView Delegate
@@ -140,7 +132,7 @@
     
     TSZCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.backgroundColor = [TSZCommonFontColorStyle mainThemeColor];
+    cell.backgroundColor = [UIColor whiteColor];
     cell.shopModel = self.shops[indexPath.item];
     return cell;
 }
@@ -178,11 +170,30 @@
 
 #pragma mark - 请求网络数据
 
+- (NSString *)urlEncode:(id)object {
+    
+    if (!object) {
+        return nil;
+    }
+    
+    if ([object isKindOfClass:[NSNumber class]]) {
+        object = [NSString stringWithFormat:@"%@",object];
+    }
+    
+    NSString *string = (NSString*)object;
+    NSString *encodedValue = (__bridge NSString*)CFURLCreateStringByAddingPercentEscapes(nil,
+                                                                                         (CFStringRef)string,
+                                                                                         nil,
+                                                                                         (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                                                         kCFStringEncodingUTF8);
+    return encodedValue;
+}
+
 - (void)requestWallList
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
        
-        NSData *htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.3gbizhi.com/tag-%@/%ld.html",TSZStringEncodeString(self.currentCategory),(long)self.currentPageIndex]]];
+        NSData *htmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.3gbizhi.com/tag-%@/%ld.html", [self urlEncode:self.currentCategory],(long)self.currentPageIndex]]];
        
         if (!htmlData) {
             return ;
@@ -212,7 +223,7 @@
                 
                 for ( GDataXMLNode *subNode  in  node.attributes) {
                     
-                    if (!TSZStringIsNull(subNode.stringValue)) {
+                    if (subNode.stringValue) {
                         
                         if ([subNode.stringValue hasPrefix:@"http://"]) {
                             
@@ -235,8 +246,8 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
            
-            [self.collectView headerEndRefreshing];
-            [self.collectView  footerEndRefreshing];
+            [self.collectView.mj_header endRefreshing];
+            [self.collectView.mj_footer endRefreshing];
             
             [self.collectView reloadSections:[NSIndexSet indexSetWithIndex:0]];
             

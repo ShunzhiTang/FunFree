@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F973FCE2175F9D05BFA1DC6 /* libPods-FunFree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C486F1C61BA8F6C5C1A24F0 /* libPods-FunFree.a */; };
 		6D96D70E1FAC435B00907287 /* change@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D96D6F81FAC435B00907287 /* change@2x.png */; };
 		6D96D70F1FAC435B00907287 /* choose_change@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D96D6F91FAC435B00907287 /* choose_change@2x.png */; };
 		6D96D7101FAC435B00907287 /* choose_mine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D96D6FA1FAC435B00907287 /* choose_mine@2x.png */; };
@@ -25,6 +26,15 @@
 		6D96D71D1FAC435B00907287 /* UIViewController+FFTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D70D1FAC435B00907287 /* UIViewController+FFTabBarControllerExtention.m */; };
 		6D96D7201FAC4B5800907287 /* FFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D71F1FAC4B5800907287 /* FFSettingViewController.m */; };
 		6D96D7271FAC5DD100907287 /* UINavigationController+FFScreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D7251FAC5DD100907287 /* UINavigationController+FFScreenPopGesture.m */; };
+		6D96D7701FAC745D00907287 /* TSZWallPaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D74F1FAC745C00907287 /* TSZWallPaperViewController.m */; };
+		6D96D7791FAC745D00907287 /* TSZCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D7631FAC745C00907287 /* TSZCollectionViewFlowLayout.m */; };
+		6D96D77A1FAC745D00907287 /* TSZShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D7651FAC745C00907287 /* TSZShopModel.m */; };
+		6D96D77B1FAC745D00907287 /* TSZItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D7681FAC745C00907287 /* TSZItemsControlView.m */; };
+		6D96D77C1FAC745D00907287 /* TSZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D76B1FAC745C00907287 /* TSZCollectionViewCell.m */; };
+		6D96D77D1FAC745D00907287 /* TSZCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D96D76C1FAC745C00907287 /* TSZCollectionViewCell.xib */; };
+		6D96D77E1FAC745D00907287 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D96D76F1FAC745C00907287 /* GDataXMLNode.m */; };
+		6D96D7801FAC798400907287 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D96D77F1FAC798400907287 /* libxml2.2.tbd */; };
+		6D96D7821FAC798C00907287 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D96D7811FAC798C00907287 /* libxml2.tbd */; };
 		98B0B2E71FAC1D41004E9D98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B0B2E61FAC1D41004E9D98 /* AppDelegate.m */; };
 		98B0B2ED1FAC1D41004E9D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B0B2EB1FAC1D41004E9D98 /* Main.storyboard */; };
 		98B0B2EF1FAC1D41004E9D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B0B2EE1FAC1D41004E9D98 /* Assets.xcassets */; };
@@ -35,6 +45,8 @@
 		98B0B3E71FAC23C8004E9D98 /* FFCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B0B3D41FAC23C8004E9D98 /* FFCustomNavigationController.m */; };
 		98B0B3EB1FAC2439004E9D98 /* FFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B0B3EA1FAC2439004E9D98 /* FFHomeViewController.m */; };
 		98B0B3EE1FAC2461004E9D98 /* FFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B0B3ED1FAC2461004E9D98 /* FFMineViewController.m */; };
+		B7E9EDB7B2A44CFC831EE5CD /* libPods-FunFreeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D19C6963827344046BF7B755 /* libPods-FunFreeTests.a */; };
+		C6C83608346D205138B93AAD /* libPods-FunFreeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ADF334FB25B170C1AFEAA5 /* libPods-FunFreeUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		178F7B55B10FAADDA1E8875D /* Pods-FunFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFree.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunFree/Pods-FunFree.release.xcconfig"; sourceTree = "<group>"; };
+		26F74B59F5FB0AA0B3664C23 /* Pods-FunFreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFreeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunFreeUITests/Pods-FunFreeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C486F1C61BA8F6C5C1A24F0 /* libPods-FunFree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunFree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D96D6F81FAC435B00907287 /* change@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "change@2x.png"; sourceTree = "<group>"; };
 		6D96D6F91FAC435B00907287 /* choose_change@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose_change@2x.png"; sourceTree = "<group>"; };
 		6D96D6FA1FAC435B00907287 /* choose_mine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose_mine@2x.png"; sourceTree = "<group>"; };
@@ -79,6 +94,22 @@
 		6D96D71F1FAC4B5800907287 /* FFSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFSettingViewController.m; sourceTree = "<group>"; };
 		6D96D7251FAC5DD100907287 /* UINavigationController+FFScreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FFScreenPopGesture.m"; sourceTree = "<group>"; };
 		6D96D7261FAC5DD100907287 /* UINavigationController+FFScreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FFScreenPopGesture.h"; sourceTree = "<group>"; };
+		6D96D74E1FAC745C00907287 /* TSZWallPaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZWallPaperViewController.h; sourceTree = "<group>"; };
+		6D96D74F1FAC745C00907287 /* TSZWallPaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZWallPaperViewController.m; sourceTree = "<group>"; };
+		6D96D7621FAC745C00907287 /* TSZCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		6D96D7631FAC745C00907287 /* TSZCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		6D96D7641FAC745C00907287 /* TSZShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZShopModel.h; sourceTree = "<group>"; };
+		6D96D7651FAC745C00907287 /* TSZShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZShopModel.m; sourceTree = "<group>"; };
+		6D96D7671FAC745C00907287 /* TSZItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZItemsControlView.h; sourceTree = "<group>"; };
+		6D96D7681FAC745C00907287 /* TSZItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZItemsControlView.m; sourceTree = "<group>"; };
+		6D96D76A1FAC745C00907287 /* TSZCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZCollectionViewCell.h; sourceTree = "<group>"; };
+		6D96D76B1FAC745C00907287 /* TSZCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZCollectionViewCell.m; sourceTree = "<group>"; };
+		6D96D76C1FAC745C00907287 /* TSZCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSZCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D96D76E1FAC745C00907287 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		6D96D76F1FAC745C00907287 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		6D96D77F1FAC798400907287 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		6D96D7811FAC798C00907287 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		726CB76807D22E0DC467452B /* Pods-FunFreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFreeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunFreeTests/Pods-FunFreeTests.release.xcconfig"; sourceTree = "<group>"; };
 		98B0B2E21FAC1D41004E9D98 /* FunFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B0B2E51FAC1D41004E9D98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98B0B2E61FAC1D41004E9D98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,6 +130,11 @@
 		98B0B3EA1FAC2439004E9D98 /* FFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHomeViewController.m; sourceTree = "<group>"; };
 		98B0B3EC1FAC2461004E9D98 /* FFMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFMineViewController.h; sourceTree = "<group>"; };
 		98B0B3ED1FAC2461004E9D98 /* FFMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFMineViewController.m; sourceTree = "<group>"; };
+		A352C2E1645A969442C8258E /* Pods-FunFreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFreeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunFreeUITests/Pods-FunFreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0510BF62AC11B61264C7043 /* Pods-FunFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunFree/Pods-FunFree.debug.xcconfig"; sourceTree = "<group>"; };
+		C0ADF334FB25B170C1AFEAA5 /* libPods-FunFreeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunFreeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19C6963827344046BF7B755 /* libPods-FunFreeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunFreeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17F289DD7E6F4BD55375563 /* Pods-FunFreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFreeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunFreeTests/Pods-FunFreeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +142,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D96D7821FAC798C00907287 /* libxml2.tbd in Frameworks */,
+				6D96D7801FAC798400907287 /* libxml2.2.tbd in Frameworks */,
+				3F973FCE2175F9D05BFA1DC6 /* libPods-FunFree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E9EDB7B2A44CFC831EE5CD /* libPods-FunFreeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C83608346D205138B93AAD /* libPods-FunFreeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +242,66 @@
 			path = TarBarConfig;
 			sourceTree = "<group>";
 		};
+		6D96D74C1FAC745C00907287 /* WallPaper */ = {
+			isa = PBXGroup;
+			children = (
+				6D96D74D1FAC745C00907287 /* Controller */,
+				6D96D7611FAC745C00907287 /* Model */,
+				6D96D7661FAC745C00907287 /* Segment */,
+				6D96D7691FAC745C00907287 /* View */,
+				6D96D76D1FAC745C00907287 /* XML */,
+			);
+			path = WallPaper;
+			sourceTree = "<group>";
+		};
+		6D96D74D1FAC745C00907287 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D96D74E1FAC745C00907287 /* TSZWallPaperViewController.h */,
+				6D96D74F1FAC745C00907287 /* TSZWallPaperViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D96D7611FAC745C00907287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D96D7621FAC745C00907287 /* TSZCollectionViewFlowLayout.h */,
+				6D96D7631FAC745C00907287 /* TSZCollectionViewFlowLayout.m */,
+				6D96D7641FAC745C00907287 /* TSZShopModel.h */,
+				6D96D7651FAC745C00907287 /* TSZShopModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D96D7661FAC745C00907287 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				6D96D7671FAC745C00907287 /* TSZItemsControlView.h */,
+				6D96D7681FAC745C00907287 /* TSZItemsControlView.m */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		6D96D7691FAC745C00907287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D96D76A1FAC745C00907287 /* TSZCollectionViewCell.h */,
+				6D96D76B1FAC745C00907287 /* TSZCollectionViewCell.m */,
+				6D96D76C1FAC745C00907287 /* TSZCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D96D76D1FAC745C00907287 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				6D96D76E1FAC745C00907287 /* GDataXMLNode.h */,
+				6D96D76F1FAC745C00907287 /* GDataXMLNode.m */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
 		98B0B2D91FAC1D41004E9D98 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +309,8 @@
 				98B0B2FD1FAC1D41004E9D98 /* FunFreeTests */,
 				98B0B3081FAC1D41004E9D98 /* FunFreeUITests */,
 				98B0B2E31FAC1D41004E9D98 /* Products */,
+				BAF23700103E24A353ED9D95 /* Pods */,
+				B3EAD02CD777CDD0169894E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +327,7 @@
 		98B0B2E41FAC1D41004E9D98 /* FunFree */ = {
 			isa = PBXGroup;
 			children = (
+				6D96D74C1FAC745C00907287 /* WallPaper */,
 				6D96D6F31FAC435B00907287 /* CustomTabBar */,
 				98B0B3E81FAC2405004E9D98 /* Main */,
 				98B0B3D21FAC23C8004E9D98 /* Base */,
@@ -280,6 +384,31 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		B3EAD02CD777CDD0169894E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D96D7811FAC798C00907287 /* libxml2.tbd */,
+				6D96D77F1FAC798400907287 /* libxml2.2.tbd */,
+				2C486F1C61BA8F6C5C1A24F0 /* libPods-FunFree.a */,
+				D19C6963827344046BF7B755 /* libPods-FunFreeTests.a */,
+				C0ADF334FB25B170C1AFEAA5 /* libPods-FunFreeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAF23700103E24A353ED9D95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0510BF62AC11B61264C7043 /* Pods-FunFree.debug.xcconfig */,
+				178F7B55B10FAADDA1E8875D /* Pods-FunFree.release.xcconfig */,
+				F17F289DD7E6F4BD55375563 /* Pods-FunFreeTests.debug.xcconfig */,
+				726CB76807D22E0DC467452B /* Pods-FunFreeTests.release.xcconfig */,
+				A352C2E1645A969442C8258E /* Pods-FunFreeUITests.debug.xcconfig */,
+				26F74B59F5FB0AA0B3664C23 /* Pods-FunFreeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,9 +416,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98B0B30E1FAC1D41004E9D98 /* Build configuration list for PBXNativeTarget "FunFree" */;
 			buildPhases = (
+				FEDD3124BC6F9DEC2244588B /* [CP] Check Pods Manifest.lock */,
 				98B0B2DE1FAC1D41004E9D98 /* Sources */,
 				98B0B2DF1FAC1D41004E9D98 /* Frameworks */,
 				98B0B2E01FAC1D41004E9D98 /* Resources */,
+				24F21B6EFCDDBBE402484C8C /* [CP] Embed Pods Frameworks */,
+				84C1C07744A1E8AD42F7198E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,9 +436,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98B0B3111FAC1D41004E9D98 /* Build configuration list for PBXNativeTarget "FunFreeTests" */;
 			buildPhases = (
+				AA385EF6D91612350EF7C7BA /* [CP] Check Pods Manifest.lock */,
 				98B0B2F61FAC1D41004E9D98 /* Sources */,
 				98B0B2F71FAC1D41004E9D98 /* Frameworks */,
 				98B0B2F81FAC1D41004E9D98 /* Resources */,
+				4AB8A94A413DECB2E2AB2A97 /* [CP] Embed Pods Frameworks */,
+				EB764CEF11C92395A61312B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,9 +457,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98B0B3141FAC1D41004E9D98 /* Build configuration list for PBXNativeTarget "FunFreeUITests" */;
 			buildPhases = (
+				8614622881822D6CD2EE9763 /* [CP] Check Pods Manifest.lock */,
 				98B0B3011FAC1D41004E9D98 /* Sources */,
 				98B0B3021FAC1D41004E9D98 /* Frameworks */,
 				98B0B3031FAC1D41004E9D98 /* Resources */,
+				8D4B74BAFE2E7064C8FC8A2E /* [CP] Embed Pods Frameworks */,
+				E8FB87A1260062544A37AC87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,6 +536,7 @@
 				6D96D7141FAC435B00907287 /* change@3x.png in Resources */,
 				98B0B2EF1FAC1D41004E9D98 /* Assets.xcassets in Resources */,
 				6D96D70F1FAC435B00907287 /* choose_change@2x.png in Resources */,
+				6D96D77D1FAC745D00907287 /* TSZCollectionViewCell.xib in Resources */,
 				6D96D7101FAC435B00907287 /* choose_mine@2x.png in Resources */,
 				98B0B2ED1FAC1D41004E9D98 /* Main.storyboard in Resources */,
 				6D96D7181FAC435B00907287 /* mine@3x.png in Resources */,
@@ -421,6 +560,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24F21B6EFCDDBBE402484C8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunFree/Pods-FunFree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AB8A94A413DECB2E2AB2A97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunFreeTests/Pods-FunFreeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84C1C07744A1E8AD42F7198E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunFree/Pods-FunFree-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8614622881822D6CD2EE9763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4B74BAFE2E7064C8FC8A2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunFreeUITests/Pods-FunFreeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA385EF6D91612350EF7C7BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FB87A1260062544A37AC87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunFreeUITests/Pods-FunFreeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB764CEF11C92395A61312B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunFreeTests/Pods-FunFreeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEDD3124BC6F9DEC2244588B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98B0B2DE1FAC1D41004E9D98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -428,15 +705,21 @@
 			files = (
 				98B0B3E71FAC23C8004E9D98 /* FFCustomNavigationController.m in Sources */,
 				6D96D7271FAC5DD100907287 /* UINavigationController+FFScreenPopGesture.m in Sources */,
+				6D96D7791FAC745D00907287 /* TSZCollectionViewFlowLayout.m in Sources */,
 				6D96D7201FAC4B5800907287 /* FFSettingViewController.m in Sources */,
+				6D96D77A1FAC745D00907287 /* TSZShopModel.m in Sources */,
+				6D96D77B1FAC745D00907287 /* TSZItemsControlView.m in Sources */,
 				98B0B3EB1FAC2439004E9D98 /* FFHomeViewController.m in Sources */,
 				6D96D71C1FAC435B00907287 /* FFTabBarControllerConfig.m in Sources */,
 				6D96D71A1FAC435B00907287 /* FFCustomTabBar.m in Sources */,
+				6D96D77C1FAC745D00907287 /* TSZCollectionViewCell.m in Sources */,
 				6D96D71B1FAC435B00907287 /* FFTabBarController.m in Sources */,
 				6D96D71D1FAC435B00907287 /* UIViewController+FFTabBarControllerExtention.m in Sources */,
 				98B0B3EE1FAC2461004E9D98 /* FFMineViewController.m in Sources */,
+				6D96D77E1FAC745D00907287 /* GDataXMLNode.m in Sources */,
 				98B0B2F51FAC1D41004E9D98 /* main.m in Sources */,
 				98B0B2E71FAC1D41004E9D98 /* AppDelegate.m in Sources */,
+				6D96D7701FAC745D00907287 /* TSZWallPaperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,12 +880,28 @@
 		};
 		98B0B30F1FAC1D41004E9D98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0510BF62AC11B61264C7043 /* Pods-FunFree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 99ZGZU86WH;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(SDK_ROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = FunFree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-l\"xml2\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfang.com.FunFree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -611,12 +910,28 @@
 		};
 		98B0B3101FAC1D41004E9D98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178F7B55B10FAADDA1E8875D /* Pods-FunFree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 99ZGZU86WH;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(SDK_ROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = FunFree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-l\"xml2\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfang.com.FunFree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -625,6 +940,7 @@
 		};
 		98B0B3121FAC1D41004E9D98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17F289DD7E6F4BD55375563 /* Pods-FunFreeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -640,6 +956,7 @@
 		};
 		98B0B3131FAC1D41004E9D98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726CB76807D22E0DC467452B /* Pods-FunFreeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -655,6 +972,7 @@
 		};
 		98B0B3151FAC1D41004E9D98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A352C2E1645A969442C8258E /* Pods-FunFreeUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99ZGZU86WH;
@@ -669,6 +987,7 @@
 		};
 		98B0B3161FAC1D41004E9D98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F74B59F5FB0AA0B3664C23 /* Pods-FunFreeUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99ZGZU86WH;

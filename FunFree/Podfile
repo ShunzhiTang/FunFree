@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, ‘8.0’
+
+target 'FunFree' do
+  
+  pod 'SDWebImage'
+  pod 'MJRefresh'
+  pod 'Masonry'
+  pod 'AFNetworking'
+  pod 'YYModel'
+
+  target 'FunFreeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FunFreeUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

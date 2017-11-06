@@ -11,6 +11,7 @@
 #import "FFHomeViewController.h"
 #import "FFMineViewController.h"
 #import "FFSettingViewController.h"
+#import "TSZWallPaperViewController.h"
 
 @interface FFTabBarControllerConfig ()
 
@@ -52,8 +53,11 @@
     FFMineViewController *mineVc = [[FFMineViewController alloc] init];
 
     UINavigationController *mineNav = [[FFCustomNavigationController alloc] initWithRootViewController:mineVc];
-
-    NSArray *viewControllers = @[ homeNav, otherNav, mineNav ];
+    
+    TSZWallPaperViewController *wpVc = [[TSZWallPaperViewController alloc] init];
+    
+    UINavigationController *wpNav = [[FFCustomNavigationController alloc] initWithRootViewController:wpVc];
+    NSArray *viewControllers = @[ homeNav, wpNav, mineNav ];
 
     return viewControllers;
 }
@@ -66,7 +70,7 @@
     };
 
     NSDictionary *dict3 = @{
-        FFTabBarTitle : @"设置",
+        FFTabBarTitle : @"图片墙",
         FFTabBarItemImage : @"change",
         FFTabBarItemSelectedImage : @"choose_change",
     };
